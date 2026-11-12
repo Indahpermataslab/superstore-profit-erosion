@@ -50,10 +50,10 @@ Retail management often uses discounts to drive sales volume without monitoring 
 - Analyzed the distributions of discount, sales, and profit to identify early loss patterns
   <img width="764" height="299" alt="image" src="https://github.com/user-attachments/assets/03f29848-5926-4adc-a9f4-5ac0306f5012" />
 
-**Three important signals at once:**
+**Three important signals:**
 
 - Min = -6,599.98 → there was a transaction that lost almost 6,600. This loss is even bigger (in absolute relative terms) than the max profit of 8,399.
-- Q1 = 0 → around 25% of transactions have zero or negative profit. A quarter of these businesses produce nothing or burn money.
+- Q1 = 0 → around 25% of transactions have zero or negative profit. A quarter of these businesses produce nothing.
 - Std (174) = 6x mean (28.6) → profitability is very unstable between transactions.
 
 
