@@ -5,6 +5,7 @@ An end-to-end analysis of discount-driven profit erosion on the Global Superstor
 
 ## Dashboard Preview
 
+<img width="1398" height="1050" alt="Screenshot 2026-07-13 at 11 33 53" src="https://github.com/user-attachments/assets/510c5be8-da59-481a-804f-f034b1234883" />
 
 ### 📌 Executive Summary
 Global Superstore posted a **net profit of $1.47M** — but hidden beneath that figure lies a **cumulative loss of $920.7K** across 11.3K loss-making transactions, equivalent to **38.6% of profit eroded**.
@@ -107,7 +108,6 @@ FROM simulation;
 - Interactive filters: region, product category
 - Percentage display types multiply values by 100 — values must be stored as decimals
 - Cross-chart reconciliation: every profit chart was validated to sum back to $1,467,456.55
-<img width="1398" height="1050" alt="Screenshot 2026-07-13 at 11 33 53" src="https://github.com/user-attachments/assets/510c5be8-da59-481a-804f-f034b1234883" />
 
 
 
