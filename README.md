@@ -48,6 +48,15 @@ Retail management often uses discounts to drive sales volume without monitoring 
 - Profiled data structure, column types, missing values, and duplicates in a Google Colab
 - Analyzed the distributions of discount, sales, and profit to identify early loss patterns
 - Validated the initial hypothesis: a negative relationship between discount level and profit
+- 
+  <img width="764" height="299" alt="image" src="https://github.com/user-attachments/assets/03f29848-5926-4adc-a9f4-5ac0306f5012" />
+
+**Three important signals at once:**
+
+- Min = -6,599.98 → there was a transaction that lost almost 6,600. This loss is even bigger (in absolute relative terms) than the max profit of 8,399.
+- Q1 = 0 → around 25% of transactions have zero or negative profit. A quarter of these businesses produce nothing or burn money.
+- Std (174) = 6x mean (28.6) → profitability is very unstable between transactions.
+
 #### 2. Schema Design & Import into PostgreSQL
 Designed the table schema in pgAdmin with a surrogate key to preserve row integrity
 Resolved CSV import issues (encoding, date formats, delimiters)
