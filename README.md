@@ -55,7 +55,8 @@ Deduplicated the data to guarantee unique order lines — critical to prevent in
 #### 3. SQL Analysis: Discount Bands & Profit Erosion
 Transactions were grouped into discount bands using CASE WHEN with explicit, non-overlapping bounds:
 
-````SELECT
+````
+SELECT
   CASE
     WHEN discount = 0                          THEN '0%'
     WHEN discount > 0    AND discount <= 0.20  THEN '0–20%'
