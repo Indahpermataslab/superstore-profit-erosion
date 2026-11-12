@@ -8,7 +8,7 @@ An end-to-end analysis of discount - driven profit erosion on the Global Superst
 <img width="1398" height="1050" alt="Screenshot 2026-07-13 at 11 33 53" src="https://github.com/user-attachments/assets/510c5be8-da59-481a-804f-f034b1234883" />
 
 ### 📌 Executive Summary
-Global Superstore posted a **net profit of $1.47M** — but hidden beneath that figure lies a **cumulative loss of $920.7K** across 11.3K loss-making transactions, equivalent to **38.6% of profit eroded**.
+Global Superstore posted a **net profit of $1.47M**, but hidden beneath that figure lies a **cumulative loss of $920.7K** across 11.3K loss-making transactions, equivalent to **38.6% of profit eroded**.
 
 This analysis demonstrates that discounting is the primary driver of losses: 
 - **every discount band above 20% consistently produces negative profit**
@@ -32,22 +32,22 @@ Retail management often uses discounts to drive sales volume without monitoring 
 - How much profit could be recovered if discounts were capped?
 
 ## 🗂️ Dataset
-Source: Global Superstore Dataset (public, ~51K retail transaction rows)
-Scope: Cross-region sales transactions with order, product, customer, shipping, discount, sales, and profit attributes
-Granularity: One row = one order line item
+- Source: Global Superstore Dataset (public, ~51K retail transaction rows)
+- Scope: Cross-region sales transactions with order, product, customer, shipping, discount, sales, and profit attributes
+- Granularity: One row = one order line item
 
 ## 🛠️ Tools & Technologies
 ### Stage	Tools
-- Exploratory Data Analysis	Python (pandas), 
-- Database & Data Modeling	PostgreSQL (hosted on Aiven), pgAdmin
-- Analysis	SQL (CTEs, window functions, CASE WHEN bucketing)
-- Visualization	Looker Studio (live connection to PostgreSQL)
+- Exploratory Data Analysis	Python (pandas)
+- Database & Data Modeling	PostgreSQL (pgAdmin) hosted on Aiven
+- Analysis	SQL (CTEs, window functions, CASE WHEN)
+- Visualization	Looker Studio (live connection to PostgreSQL by Aiven)
   
 ### 🔄 Methodology
 #### 1. Exploratory Data Analysis (Python)
-Profiled data structure, column types, missing values, and duplicates in a Jupyter Notebook
-Analyzed the distributions of discount, sales, and profit to identify early loss patterns
-Validated the initial hypothesis: a negative relationship between discount level and profit
+- Profiled data structure, column types, missing values, and duplicates in a Google Colab
+- Analyzed the distributions of discount, sales, and profit to identify early loss patterns
+- Validated the initial hypothesis: a negative relationship between discount level and profit
 #### 2. Schema Design & Import into PostgreSQL
 Designed the table schema in pgAdmin with a surrogate key to preserve row integrity
 Resolved CSV import issues (encoding, date formats, delimiters)
