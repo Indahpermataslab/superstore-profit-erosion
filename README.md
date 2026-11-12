@@ -1,5 +1,5 @@
 # **Loss Analysis: Discounts Eroded 38.5% of Superstore Profit**
-An end-to-end analysis of discount-driven profit erosion on the Global Superstore dataset — from EDA and database design to SQL analysis and an interactive dashboard with a what-if simulation.
+An end-to-end analysis of discount - driven profit erosion on the Global Superstore dataset, from EDA and database design to SQL analysis and an interactive dashboard with a what-if simulation.
 
 🔗  [View the Interactive Dashboard on Looker Studio](https://datastudio.google.com/reporting/7524752c-899b-4ed1-b9ab-838741477c33)
 
